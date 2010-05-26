@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jtheque</groupId>
+    <artifactId>org.jtheque.osgi-wrap</artifactId>
+    <name>org.jtheque.osgi-wrap</name>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <modules>
+        <module>jtheque-saxpath</module>
+        <module>jtheque-jaxen-jdom</module>
+        <module>jtheque-jaxen-core</module>
+        <module>jtheque-xercesImpl</module>
+        <module>jtheque-jdom</module>
+        <module>jtheque-apple-extensions</module>
+        <module>jtheque-substance</module>
+        <module>jtheque-trident</module>
+        <module>jtheque-jxlayer</module>
+        <module>jtheque-swingx</module>
+        <module>jtheque-javamail</module>
+        <module>jtheque-dj-native-swing</module>
+        <module>jtheque-dj-native-swing-swt</module>
+        <module>jtheque-swt-win32</module>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>Server-PC-releases</id>
+            <name>Server-PC-releases</name>
+            <url>http://wichtounet.homedns.org:8280/artifactory/libs-releases-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>Server-PC-snapshots</id>
+            <name>Server-PC-snapshots</name>
+            <url>http://wichtounet.homedns.org:8280/artifactory/libs-snapshots-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
+    <properties>
+        <export.packages>*;version=${unpack.version}</export.packages>
+        <import.packages>*;resolution:=optional</import.packages>
+        <symbolic.name>${pom.artifactId}</symbolic.name>
+        <embed-dep>*;scope=compile;type=!pom;inline=true</embed-dep>
+        <unpack-bundle>false</unpack-bundle>
+    </properties>
+
+    <build>
+        <directory>${env.BUILD_HOME}/dependencies/${symbolic.name}</directory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>1.2.0</version>
+                <configuration>
+                    <unpackBundle>${unpack.bundle}</unpackBundle>
+                    <instructions>
+                        <Bundle-Name>${artifactId}</Bundle-Name>
+                        <Bundle-SymbolicName>${symbolic.name}</Bundle-SymbolicName>
+                        <Bundle-Description>${pom.name}</Bundle-Description>
+                        <Import-Package>${import.packages}</Import-Package>
+                        <Private-Package>${private.packages}</Private-Package>
+                        <Include-Resource>${include.resources}</Include-Resource>
+                        <Embed-Dependency>${embed-dep}</Embed-Dependency>
+                        <_exportcontents>${export.packages}</_exportcontents>
+                    </instructions>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

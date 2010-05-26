@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file:///home/wichtounet/Builds/dependencies/org.jtheque.saxpath/classes" />
+    <output-test url="file:///home/wichtounet/Builds/dependencies/org.jtheque.saxpath/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/${ENV.BUILD_HOME}" />
+      <excludeFolder url="file://$MODULE_DIR$/${ENV.}" />
+      <excludeFolder url="file://$MODULE_DIR$/${env.BUILD_HOME}/dependencies/org.jtheque.saxpath" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Maven: org.jdom:saxpath:1.0-FCS" level="project" />
+  </component>
+</module>
+

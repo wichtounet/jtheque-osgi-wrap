@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.swinglabs</groupId>
+    <packaging>bundle</packaging>
+    <artifactId>org.jtheque.jxlayer</artifactId>
+    <name>jxlayer</name>
+    <version>3.0.4</version>
+
+    <parent>
+        <artifactId>org.jtheque.osgi-wrap</artifactId>
+        <groupId>org.jtheque</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <properties>
+        <unpack.version>3.0.4</unpack.version>
+        <export.package/>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.swinglabs</groupId>
+            <artifactId>jxlayer</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+    </dependencies>
+</project>

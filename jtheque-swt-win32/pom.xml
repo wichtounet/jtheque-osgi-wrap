@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>javax.swing-native</groupId>
+    <artifactId>org.jtheque.swt-win32</artifactId>
+    <name>swt-win32</name>
+    <packaging>bundle</packaging>
+    <version>3.5.6</version>
+
+    <parent>
+        <artifactId>org.jtheque.osgi-wrap</artifactId>
+        <groupId>org.jtheque</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <properties>
+        <unpack.version>3.5.6</unpack.version>
+        <export.package/>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.swing.native</groupId>
+            <artifactId>swt-win32</artifactId>
+            <version>3.5M6</version>
+        </dependency>
+    </dependencies>
+</project>
