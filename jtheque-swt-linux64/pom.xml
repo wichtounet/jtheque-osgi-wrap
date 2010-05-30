@@ -5,10 +5,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>javax.swing-native</groupId>
-    <artifactId>org.jtheque.dj-native-swing</artifactId>
+    <artifactId>org.jtheque.swt-linux64</artifactId>
+    <name>swt-linux64</name>
     <packaging>bundle</packaging>
-    <name>swing-native</name>
-    <version>0.9.9</version>
+    <version>3.6.7</version>
 
     <parent>
         <artifactId>org.jtheque.osgi-wrap</artifactId>
@@ -17,22 +17,11 @@
     </parent>
 
     <properties>
-        <unpack.version>0.9.9</unpack.version>
+        <unpack.version>3.6.7</unpack.version>
         <export.package/>
-        <dynamic.import.package>org.eclipse.swt.internal, org.eclipse.swt.internal.gtk</dynamic.import.package>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>javax.swing.native</groupId>
-            <artifactId>dj-native-swing</artifactId>
-            <version>0.9.9-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.swing.native</groupId>
-            <artifactId>dj-native-swing-swt</artifactId>
-            <version>0.9.9-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>javax.swing.native</groupId>
             <artifactId>swt-linux64</artifactId>

@@ -26,6 +26,7 @@
         <module>jtheque-dj-native-swing</module>
         <module>jtheque-dj-native-swing-swt</module>
         <module>jtheque-swt-win32</module>
+        <module>jtheque-swt-linux64</module>
     </modules>
 
     <distributionManagement>
@@ -44,6 +45,7 @@
     <properties>
         <export.packages>*;version=${unpack.version}</export.packages>
         <import.packages>*;resolution:=optional</import.packages>
+        <dynamic.import.packages/>
         <symbolic.name>${pom.artifactId}</symbolic.name>
         <embed-dep>*;scope=compile;type=!pom;inline=true</embed-dep>
         <unpack-bundle>false</unpack-bundle>
@@ -64,6 +66,7 @@
                         <Bundle-SymbolicName>${symbolic.name}</Bundle-SymbolicName>
                         <Bundle-Description>${pom.name}</Bundle-Description>
                         <Import-Package>${import.packages}</Import-Package>
+                        <DynamicImport-Package>${dynamic.import.package}</DynamicImport-Package>
                         <Private-Package>${private.packages}</Private-Package>
                         <Include-Resource>${include.resources}</Include-Resource>
                         <Embed-Dependency>${embed-dep}</Embed-Dependency>
