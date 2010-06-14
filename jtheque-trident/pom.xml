@@ -21,7 +21,7 @@
         <export.package/>
         <import.packages>!android.*,!org.eclipse.*,!.,*</import.packages>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>net.trident</groupId>

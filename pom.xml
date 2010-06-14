@@ -41,7 +41,7 @@
             <url>http://wichtounet.homedns.org:8280/artifactory/libs-snapshots-local</url>
         </snapshotRepository>
     </distributionManagement>
-    
+
     <properties>
         <export.packages>*;version=${unpack.version}</export.packages>
         <import.packages>*;resolution:=optional</import.packages>
