@@ -52,8 +52,6 @@
     </properties>
 
     <build>
-        <directory>${env.BUILD_HOME}/dependencies/${symbolic.name}</directory>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.felix</groupId>
