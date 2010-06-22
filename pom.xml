@@ -11,6 +11,23 @@
     <packaging>pom</packaging>
     <version>1.0</version>
 
+    <url>http://github.com/wichtounet/jtheque-osgi-wrap</url>
+
+    <ciManagement>
+        <system>Hudson</system>
+        <url>http://wichtounet.homedns.org:8280/hudson/</url>
+    </ciManagement>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>http://github.com/wichtounet/jtheque-osgi-wrap/issues</url>
+	</issueManagement>
+
+    <scm>
+        <url>http://github.com/wichtounet/jtheque-osgi-wrap</url>
+        <connection>scm:git:git@github.com:wichtounet/jtheque-osgi-wrap.git</connection>
+    </scm>
+
     <modules>
         <module>jtheque-saxpath</module>
         <module>jtheque-jaxen-jdom</module>
@@ -75,4 +92,35 @@
             </plugin>
         </plugins>
     </build>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>JTheque</name>
+        <url>http://jtheque.baptiste-wicht.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>wichtounet</id>
+            <name>Baptiste Wicht</name>
+            <email>baptistewicht@gmail.com</email>
+            <url>http://baptiste-wicht.developpez.com</url>
+            <organization>http://baptiste-wicht.developpez.com</organization>
+            <organizationUrl>http://baptiste-wicht.developpez.com</organizationUrl>
+
+            <roles>
+                <role>Administrateur</role>
+                <role>Développeur</role>
+            </roles>
+
+            <timezone>0</timezone>
+        </developer>
+    </developers>
 </project>
